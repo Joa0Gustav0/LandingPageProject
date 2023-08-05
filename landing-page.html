@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <title>SPA | Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+</head>
+<body>
+    <main class="home" 
+        id="home"
+        on>
+        <aside>
+            <h1>For a pleasent <span>body</span>, <span>mind</span> and <span>soul</span>.</h1>
+            <p><span>SPA</span> will guide you intendding your inner and outer peace.</p>
+            <a href="#conclusion">Your path starts here.</a>
+        </aside>
+        <header>
+            <a href="landing-page.html">
+                <img src="media/logo.png"
+                    alt="header__logo"
+                    class="header__logo">
+            </a>
+            <aside>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#locator">Find a spa center <ion-icon name="location-sharp"></ion-icon></a>
+            </aside>
+            <ion-icon name="menu-sharp"
+                    class="header__navbar-button open-navbar"
+                    onclick="setNavbarState(this)"></ion-icon>
+        </header>
+        <img src="media/small-landing-picture.jpg" class="home__alt-landing-picture">
+    </main>
+    <section class="about" 
+            id="about">
+        <aside>
+            <h1><span>SPA</span> works with <span>honor</span>, <span>dignity</span> and <span>respect</span>.</h1>
+            <p>Since 2023, SPA helps thousand of people like you for having a healthier lifestyle offering a complete, personalized and exclusive guide for a peaceful journey aiming daily stress and tensions relieving.
+            </p>
+        </aside>
+        <img src="media/alt-about-picture.jpg"class="about__alt-picture">
+    </section>
+    <section class="services" 
+            id="services">
+        <h1>Services</h1>
+        <p>SPA offers you a guide for these activities categories:</p>
+        <p class="services__main-p">Click for know more about each activity.</p>
+        <aside class="services__services-catalogue">
+            <a href="services-pages/massage.html" class="services-catalogue__service-box service-massage">
+                <img src="media/massage-icon.png" alt="service-icon">
+                <h1>Massage</h1>
+            </a>
+            <a href="services-pages/yoga.html" class="services-catalogue__service-box service-yoga">
+                <img src="media/yoga-icon.png" alt="service-icon">
+                <h1>Yoga</h1>
+            </a>
+            <a href="services-pages/sauna.html" class="services-catalogue__service-box service-sauna">
+                <img src="media/sauna-icon.png" alt="service-icon">
+                <h1>Sauna</h1>
+            </a>
+            <a href="services-pages/mud-bath.html" class="services-catalogue__service-box service-mud-bath">
+                <img src="media/mud-bath-icon.png" alt="service-icon">
+                <h1>Mud Bath</h1>
+            </a>
+            <a href="services-pages/hair-removal.html" class="services-catalogue__service-box service-hair-removal">
+                <img src="media/hair-removal-icon.png" alt="service-icon">
+                <h1>Hair Removal</h1>
+            </a>
+            <a href="services-pages/manicure-and-pedicure.html" class="services-catalogue__service-box service-mpedicure">
+                <img src="media/mpedicure-icon.png" alt="service-icon">
+                <h1>Manicure And Pedicure</h1>
+            </a>
+        </aside>
+    </section>
+    <section class="locator" 
+            id="locator">
+        <ion-icon name="location-sharp"></ion-icon></a>
+        <aside>
+            <h1>Search for a spa center nearby.</h1>
+            <p>Remember choosing a <span>trust</span>, <span>good</span> and <span>confortable</span> spa center.</p>
+        </aside>
+        <iframe class="services__maps" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31001.321676885687!2d-46.66239042606531!3d-23.544409180093503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scentros%20de%20spa!5e0!3m2!1spt-BR!2sbr!4v1690110094710!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="conclusion" 
+            id="conclusion">
+        <img src="media/alt-conclusion-picture.jpg" class="conclusion__alt-image">
+        <aside>
+            <h1>Keep calm. Take a breath.</h1>
+            <p>Click on the button down bellow and start your journey guided by SPA.</p>
+            <a href="Sorry!-Nothing-to-see-here...">Let's go!</a>
+        </aside>
+    </section>
+    <footer>
+        &circledR; 2023 SPA. All Rights Reserved.
+    </footer>
+    
+    <nav class="navbar"
+    id="navbar">
+        <ion-icon name="close-sharp"
+                class="close-navbar"
+                onclick="setNavbarState(this)"></ion-icon>
+        <a href="#home"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">Home <ion-icon name="home-sharp"></ion-icon></a>
+        <a href="#about"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">About <ion-icon name="search-sharp"></ion-icon></a>
+        <a href="#services"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">Services <ion-icon name="briefcase-sharp"></ion-icon></a>
+        <a href="#locator"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">Find a spa center <ion-icon name="location-sharp"></ion-icon></a>
+    </nav>
+
+    <a href="#home" 
+        class="gtbutton" 
+        id="gtbutton">
+        <ion-icon name="arrow-up-sharp"></ion-icon>
+    </a>
+
+    <script src="default.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>

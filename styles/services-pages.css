@@ -1,0 +1,70 @@
+body{
+    position: relative;
+    background: var(--backgroundColor) var(--backgroundImage) left top no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body > aside{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 0%;
+
+    width: 400px;
+    color: var(--primaryColor);
+}
+body > aside h1{
+    color: var(--secondaryColor);
+    font-size: 3em;
+}
+body > aside p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+body > aside p span{
+    font-weight: 700;
+    color: var(--secondaryColor);
+}
+body > aside a{
+    transition: .1s;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+}
+body > aside a:hover{
+    transition: .1s;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+}
+body .alt-landing-img{
+    display: none;
+    width: 100%;
+    margin-top: 40%;
+}
+
+@media screen and (max-width: 899px) {
+    body{
+        background-image: none;
+        min-height: 844px;
+    }
+    body > aside{
+        top: 50%;
+        left: 50%;
+    }
+    body .alt-landing-img{
+        display: block;
+    }
+}
+@media screen and (max-width: 499px) {
+    body > aside{
+        width: 80%;
+        font-size: 3.5vw;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/favicon.ico" type="image/x-icon">
+    <title>SPA | Hair Removal</title>
+    <link rel="stylesheet" href="../styles/default-services-page.css">
+    <link rel="stylesheet" href="../styles/services-pages.css">
+    <style>
+        :root{
+            --backgroundImage: url(../media/hair-removal-landing-picture.jpg);
+            --backgroundColor: #EEEFF1;
+            --primaryColor: #000000;
+            --secondaryColor: #9C5797;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../landing-page.html">
+            <img src="../media/logo.png"
+                alt="header__logo"
+                class="header__logo">
+        </a>
+        <aside>
+            <a href="../landing-page.html#home">Home</a>
+            <a href="../landing-page.html#about">About</a>
+            <a href="../landing-page.html#services">Services</a>
+            <a href="../landing-page.html#locator">Find a spa center <ion-icon name="location-sharp"></ion-icon></a>
+        </aside>
+        <ion-icon name="menu-sharp"
+                class="header__navbar-button open-navbar"
+                onclick="setNavbarState(this)"></ion-icon>
+    </header>
+    <img src="../media/alt-hair-removal-picture.jpg" class="alt-landing-img">
+    <aside>
+        <h1>Hair Removal</h1>
+        <p>Laser <span>hair removal</span> is the process of hair removal by means of exposure to pulses of laser light that destroy the hair follicle.</p>
+        <p><span>SPA</span> can guide you through your future <span>hair removal</span> experiences.</p>
+        <a href="#">Your path starts here.</a>
+    </aside>
+    <nav class="navbar"
+    id="navbar">
+        <ion-icon name="close-sharp"
+                class="close-navbar"
+                onclick="setNavbarState(this)"></ion-icon>
+        <a href="../landing-page.html#home"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">Home <ion-icon name="home-sharp"></ion-icon></a>
+        <a href="../landing-page.html#about"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">About <ion-icon name="search-sharp"></ion-icon></a>
+        <a href="../landing-page.html#services"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">Services <ion-icon name="briefcase-sharp"></ion-icon></a>
+        <a href="../landing-page.html#locator"
+            name='navbar-ancors'
+            onclick="setNavbarState(this)">Find a spa center <ion-icon name="location-sharp"></ion-icon></a>
+    </nav>
+    
+    <script src="../default.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
