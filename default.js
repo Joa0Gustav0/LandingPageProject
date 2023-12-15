@@ -4,6 +4,10 @@ let navBar = document.querySelector('.navbar')
 let openNavBarButton = document.querySelector('.open-navbar')
 let closeNavBarButton = document.querySelector('.close-navbar')
 
+const heroPicture = document.getElementById("small-landing-picture")
+heroPicture?.fetchPriority = "high"
+
+
 window.onscroll = function onScroll(){
     //makes goTopButton appear or disappear
     if (window.scrollY > 100){
